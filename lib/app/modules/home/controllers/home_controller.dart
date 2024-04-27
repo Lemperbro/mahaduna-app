@@ -1,23 +1,20 @@
 import 'package:get/get.dart';
+import 'package:mahaduna_apps/app/controllers/kajian_data_controller.dart';
+
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
-
-  final count = 0.obs;
-  @override
+  final _kajianDataC = Get.put(KajianDataController());
+  // final _allVideo = Get.put(AllVideo());
+  RxString activeMenuArtikel = 'terbaru'.obs;
   void onInit() {
+    _kajianDataC.getAllKajian();
+    // _allVideo.getAllLatestVideo();
     super.onInit();
   }
 
-  @override
-  void onReady() {
-    super.onReady();
+  void setActiveMenuArtikel(String menu) {
+    activeMenuArtikel.value = menu;
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
-  void increment() => count.value++;
 }

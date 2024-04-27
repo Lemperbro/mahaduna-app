@@ -7,7 +7,7 @@ import '../controllers/kajian_controller.dart';
 import '_header.dart';
 
 class KajianView extends GetView<KajianController> {
-  const KajianView({Key? key}) : super(key: key);
+  KajianView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -47,13 +47,10 @@ class KajianView extends GetView<KajianController> {
             ],
           ),
           ListView(
-            children: [Text('ya')],
+            children: [Text('hmm')],
           ),
         ]),
       ),
     );
   }
 }
-
-
-

@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import '../controllers/pondok_controller.dart';
 
 class PondokView extends GetView<PondokController> {
+
   const PondokView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {

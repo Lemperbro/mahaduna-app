@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mahaduna_apps/app/config/config.dart';
-import '../controllers/artikel_controller.dart';
+import 'package:mahaduna_apps/app/modules/home/controllers/home_controller.dart';
 
 class Artikel extends StatelessWidget {
-  final ArtikelController artikelController = Get.put(ArtikelController());
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,6 +18,8 @@ class Artikel extends StatelessWidget {
   }
 
   Widget Header() {
+    final artikelController = Get.find<HomeController>();
+
     return Obx(
       () => Column(
         children: [
@@ -85,14 +86,14 @@ class Artikel extends StatelessWidget {
                 ].map((i) {
                   return InkWell(
                     onTap: () {
-                      artikelController.setActiveMenu(i.toLowerCase());
+                      artikelController.setActiveMenuArtikel(i.toLowerCase());
                     },
                     child: Container(
                       padding:
                           EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                       margin: EdgeInsets.symmetric(horizontal: 5),
                       decoration: BoxDecoration(
-                        color: artikelController.activeMenu.value ==
+                        color: artikelController.activeMenuArtikel.value ==
                                 i.toLowerCase()
                             ? Color(ConfigColor.appBarColor1)
                             : null,
@@ -103,7 +104,7 @@ class Artikel extends StatelessWidget {
                       child: Text(
                         '${i}',
                         style: TextStyle(
-                          color: artikelController.activeMenu.value ==
+                          color: artikelController.activeMenuArtikel.value ==
                                   i.toLowerCase()
                               ? Colors.white
                               : Color(ConfigColor.appBarColor1),
@@ -177,8 +178,12 @@ class Artikel extends StatelessWidget {
                                       width: 5,
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(bottom: 1),
-                                        child: Text('20', style: TextStyle(fontSize: 14),),)
+                                      margin: EdgeInsets.only(bottom: 1),
+                                      child: Text(
+                                        '20',
+                                        style: TextStyle(fontSize: 14),
+                                      ),
+                                    )
                                   ]),
                             )
                           ],

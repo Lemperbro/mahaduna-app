@@ -16,13 +16,17 @@ class BottomNavigateView extends GetView<BottomNavigateController> {
   final dynamic kajian;
   final dynamic wali;
   final dynamic pondok;
+  final int index;
+  final BottomNavigateController bottomBarController =
+      Get.put(BottomNavigateController(), permanent: false);
 
-  BottomNavigateView({
-    this.home = null,
-    this.kajian = null,
-    this.wali = null,
-    this.pondok = null,
-  });
+
+  BottomNavigateView(
+      {this.home = null,
+      this.kajian = null,
+      this.wali = null,
+      this.pondok = null,
+      this.index = 0});
 
   List<Widget> _buildScreens() {
     return [
@@ -77,12 +81,16 @@ class BottomNavigateView extends GetView<BottomNavigateController> {
   @override
   Widget build(BuildContext context) {
     PersistentTabController _controller;
-    _controller = PersistentTabController(initialIndex: 0);
+    _controller = PersistentTabController(initialIndex: this.index);
     return PersistentTabView(
       context,
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarsItems(),
+      onItemSelected: (value) {
+        bottomBarController.onItemTapped(value);
+        bottomBarController.update();
+      },
       confineInSafeArea: true,
       backgroundColor: Colors.white, // Default is Colors.white.
       handleAndroidBackButtonPress: true, // Default is true.

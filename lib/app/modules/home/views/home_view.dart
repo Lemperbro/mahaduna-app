@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+// import 'package:mahaduna_apps/app/controllers/kajian_data_controller.dart';
 import 'package:mahaduna_apps/app/modules/home/views/_artikel.dart';
 
 import '../controllers/home_controller.dart';
@@ -12,9 +13,11 @@ import '_addiya.dart';
 
 class HomeView extends GetView<HomeController> {
   HomeView({Key? key}) : super(key: key);
+  final homeController = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
+  
     return Scaffold(
       backgroundColor: Colors.grey[100],
       // bottomNavigationBar: BottomNavigateView(),

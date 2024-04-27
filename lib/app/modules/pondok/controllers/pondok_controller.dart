@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 
 class PondokController extends GetxController {
-  //TODO: Implement PondokController
 
   final count = 0.obs;
   @override
