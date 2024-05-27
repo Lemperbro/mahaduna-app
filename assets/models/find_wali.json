@@ -1,0 +1,33 @@
+{
+    "data": {
+        "wali_id": 1,
+        "nama": "Dr. Fatima Bernier MD",
+        "email": "yuliantoryan64@gmail.com",
+        "alamat": "63271 Adams Corners Suite 881\nNew Kraig, OK 50304",
+        "telp": "082230736205",
+        "santri": [
+            {
+                "santri_id": 13,
+                "nama": "Chesley Barton",
+                "nisn": null,
+                "jenjang": "mts",
+                "tgl_lahir": "1970-12-18",
+                "tgl_masuk": null,
+                "jenis_kelamin": "laki-laki",
+                "status": "aktif",
+                "created_at": "2024-05-26T11:23:21.000000Z"
+            },
+            {
+                "santri_id": 19,
+                "nama": "Robin Gorczany",
+                "nisn": null,
+                "jenjang": "ma",
+                "tgl_lahir": "1987-11-30",
+                "tgl_masuk": null,
+                "jenis_kelamin": "laki-laki",
+                "status": "aktif",
+                "created_at": "2024-05-26T11:23:21.000000Z"
+            }
+        ]
+    }
+}

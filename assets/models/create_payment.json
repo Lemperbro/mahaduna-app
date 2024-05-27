@@ -1,0 +1,17 @@
+{
+    "data": {
+        "transaksi_id": 18,
+        "tagihan_id": 5,
+        "invoice_id": "664774117fb03795d84ae68f",
+        "external_id": "8499583d-f7ed-4ae2-8049-ab6c537adfe6",
+        "payment_link": "https://checkout-staging.xendit.co/v2/664774117fb03795d84ae68f",
+        "price": 10000,
+        "pay": 10000,
+        "payment_type": "payment_gateway",
+        "payment_status": "PENDING",
+        "expired": "2024-05-18 15:13:21",
+        "created_at": "2024-05-17T15:13:20.000000Z",
+        "updated_at": "2024-05-17T15:13:20.000000Z",
+        "deleted_at": null
+    }
+}

@@ -16,22 +16,25 @@ class BottomNavigateView extends GetView<BottomNavigateController> {
   final dynamic kajian;
   final dynamic wali;
   final dynamic pondok;
-  final int index;
+  final arguments = Get.arguments ?? 0;
   final BottomNavigateController bottomBarController =
       Get.put(BottomNavigateController(), permanent: false);
-
 
   BottomNavigateView(
       {this.home = null,
       this.kajian = null,
       this.wali = null,
-      this.pondok = null,
-      this.index = 0});
+      this.pondok = null});
 
   List<Widget> _buildScreens() {
     return [
       home ?? HomeView(),
-      kajian ?? KajianView(),
+      kajian ??
+          KajianView(
+            index: (arguments is Map) && arguments.containsKey('kajianTabIndex')
+                ? arguments['kajianTabIndex']
+                : 0,
+          ),
       wali ?? WaliView(),
       pondok ?? PondokView()
     ];
@@ -81,13 +84,17 @@ class BottomNavigateView extends GetView<BottomNavigateController> {
   @override
   Widget build(BuildContext context) {
     PersistentTabController _controller;
-    _controller = PersistentTabController(initialIndex: this.index);
+    _controller = PersistentTabController(
+        initialIndex: (arguments is Map) && arguments.containsKey('index')
+            ? arguments['index']
+            : arguments);
     return PersistentTabView(
       context,
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarsItems(),
       onItemSelected: (value) {
+        bottomBarController.tappedPageWali(value);
         bottomBarController.onItemTapped(value);
         bottomBarController.update();
       },

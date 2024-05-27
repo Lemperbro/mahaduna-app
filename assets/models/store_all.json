@@ -1,0 +1,144 @@
+{
+    "data": [
+        {
+            "produk_id": 6,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/uploads/storeImage/664b09a0283de-1716193696.png"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/uploads/storeImage/664b09a02e712-1716193696.png"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/uploads/storeImage/664b09a2047c7-1716193698.png"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/uploads/storeImage/664b09a20bd7a-1716193698.jpg"
+                }
+            ],
+            "label": "testing",
+            "slug": "testing",
+            "price": "1,000,000",
+            "stock": 10,
+            "deskripsi": "asdsdsd",
+            "created_at": "2024-05-20T08:28:25.000000Z"
+        },
+        {
+            "produk_id": 1,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=1"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=2"
+                }
+            ],
+            "label": "produk 14",
+            "slug": "produk-14",
+            "price": "89,023",
+            "stock": 2,
+            "deskripsi": "Et minima omnis quia corporis in sint ut. Quos necessitatibus dolorem debitis totam dignissimos minima ut. Ducimus nihil voluptate dicta nostrum id dolores rerum veritatis.\n\nPerferendis quae nostrum assumenda corporis minima quia. Porro asperiores qui non minima assumenda. Nihil et eligendi sequi.\n\nAtque amet perspiciatis debitis est eos. Doloribus porro iusto voluptates. Et sit excepturi asperiores nesciunt quod exercitationem sunt voluptatem. Sunt sit consequatur perspiciatis minus.\n\nVelit sit ducimus ex aut maxime. Voluptas laudantium est fuga rerum voluptatibus illo. Ut voluptas tenetur voluptatem a quas a aperiam.\n\nVoluptatum vel non adipisci temporibus dolor aperiam itaque. Qui est non tempora voluptatum omnis pariatur et. Error beatae aut quibusdam ea eos quia assumenda. Nam eaque illo expedita.\n\nNeque et et omnis. Non sunt sit aliquam laboriosam sed est quisquam. Est aliquid sed magnam eos.\n\nQui vitae quidem ipsa quia velit repellendus reiciendis veritatis. Excepturi autem praesentium et sunt aut. Inventore error ratione officia quam itaque optio deserunt. Nihil debitis enim adipisci et corporis.\n\nUllam aspernatur voluptatibus et voluptatibus voluptatem laboriosam. Corporis voluptatem aut voluptate tenetur. Corporis aut sint et veritatis.\n\nIpsum aperiam sunt ratione deleniti ipsum deserunt. Architecto sed illum quia iusto ut totam eos. Rerum architecto non tempore quisquam natus dolorem.\n\nQuae beatae non voluptas animi quo aut sequi tenetur. Saepe consequatur totam eum. Dignissimos delectus qui sit ipsam quisquam.",
+            "created_at": "2024-05-20T08:21:50.000000Z"
+        },
+        {
+            "produk_id": 2,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=3"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=4"
+                }
+            ],
+            "label": "produk 3",
+            "slug": "produk-3",
+            "price": "140,370",
+            "stock": 2,
+            "deskripsi": "Reprehenderit dolores qui quae expedita aperiam voluptatem molestias doloremque. Facilis est quo velit aut voluptatem. Et tempora facilis sequi debitis magnam recusandae veniam.\n\nMagnam nemo sint architecto enim iusto. Facere commodi vero sit voluptas. Eius fugit iste ipsa amet non consectetur aut.\n\nUllam numquam ullam facere nulla libero ullam modi. Illum eius omnis odit voluptatem sequi. Voluptatem deleniti assumenda vel libero et et.\n\nEx est dolor id et. Quaerat inventore rerum tempora officiis voluptatem dignissimos officia odio. Veritatis qui ullam numquam animi corporis. Vitae ad quo odio quos eos fuga. Quod dolorem sint fugiat perspiciatis architecto velit voluptas.\n\nDignissimos eaque sit beatae voluptate aut. Repellat nostrum ea qui odit. Sit explicabo nihil est perspiciatis cumque. Repudiandae nobis consequatur nulla necessitatibus pariatur.\n\nOccaecati amet minus aut ratione. Eum similique vel iusto sed temporibus voluptatum. Quis a quidem necessitatibus voluptatibus nesciunt. Harum ipsum eaque maxime nostrum.\n\nRepellat consequatur quidem voluptatem ad quia. Et et est omnis maxime commodi nam unde. Repellendus omnis autem accusamus porro in. Accusantium voluptas et non.\n\nCum et id ut eos illo maiores. Est ut a id dignissimos est soluta. Dignissimos illo voluptatem est accusamus ex.\n\nVelit magnam eius et et sit error neque. Perferendis occaecati magnam perspiciatis numquam placeat qui repellendus. Voluptatem et ut iste est autem ad exercitationem.\n\nSed quis adipisci adipisci tempora quasi. Ex repellat veritatis natus recusandae sequi neque. Tenetur quod enim ad hic qui. Consectetur expedita rerum qui quia facere. Culpa vel minus enim aliquam id dolores debitis debitis.",
+            "created_at": "2024-05-20T08:21:50.000000Z"
+        },
+        {
+            "produk_id": 3,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=5"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=6"
+                }
+            ],
+            "label": "produk 9",
+            "slug": "produk-9",
+            "price": "156,600",
+            "stock": 6,
+            "deskripsi": "Fuga mollitia et inventore deserunt velit aliquam occaecati. Voluptatem reiciendis eos numquam ut magnam natus voluptates. Minima sed sed soluta ratione soluta. Veniam omnis explicabo nihil optio possimus alias sit.\n\nAccusamus eius repellat ut minus minima perferendis eum. Ut est consectetur iste odit fugit ut vel. Quia voluptatem officiis omnis iusto aliquam eum. Nulla quia ut eum nostrum.\n\nDeleniti veniam expedita in. Enim pariatur eveniet est dolores adipisci. Quis qui eius assumenda voluptatum eveniet eius iure. Omnis debitis dolorem voluptatum labore nulla recusandae molestiae est.\n\nTemporibus sit officiis eius quam iure tempore optio. Repudiandae omnis repudiandae in qui nihil enim. Placeat ut blanditiis aliquid explicabo. Dolorem error aut eveniet expedita a.\n\nQuisquam reiciendis non exercitationem itaque itaque. Corporis et id qui sit saepe. Porro dolores quis voluptatem omnis.\n\nSequi eos est quia dolores incidunt ut. Fugit molestiae alias ipsa. Ratione tempora mollitia fugit dolorum doloribus.\n\nIpsa nulla quae enim dicta. Quo quo quam voluptatum. Inventore reprehenderit dolor quia placeat. Dolores omnis voluptas nam nemo.\n\nQuis numquam debitis nostrum dolor et. Aperiam ut similique non omnis deserunt ut. Sed minus explicabo alias non libero.\n\nPraesentium eum tenetur quisquam dolor error. Perspiciatis ipsa quas eum cumque quo et et. Nesciunt sunt debitis id qui nesciunt aliquid.\n\nVoluptates ut non dolor et. Animi optio sint sit hic. Quasi animi voluptatem qui facilis eligendi quam. Est vel dolorum laudantium est sequi.",
+            "created_at": "2024-05-20T08:21:50.000000Z"
+        },
+        {
+            "produk_id": 4,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=7"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=8"
+                }
+            ],
+            "label": "produk 13",
+            "slug": "produk-13",
+            "price": "23,561",
+            "stock": 11,
+            "deskripsi": "Voluptas dolorem inventore hic doloribus voluptatum et. Doloribus harum tempora quibusdam. Debitis perferendis ut excepturi est placeat est. Et eligendi ipsam minus illo optio quia.\n\nUt recusandae sit dolor maxime. Minima molestias facilis voluptatem.\n\nItaque aut numquam dolore recusandae molestiae possimus. Aut eos officia nihil vel quisquam similique atque dignissimos. Totam labore nam dolores perferendis incidunt sit iste. Voluptatem tempora reprehenderit in repellat ut qui.\n\nSit iure facilis accusamus aut. Officiis voluptas ea ea voluptates. Facilis qui optio rerum voluptatem nesciunt numquam. Amet et voluptatibus aut deserunt repudiandae minus id.\n\nNon et similique reprehenderit. Necessitatibus exercitationem harum consequatur aut quas perspiciatis. Quia facere id numquam inventore facere itaque nihil quia. Pariatur ratione accusamus labore expedita molestiae at voluptate.\n\nQuod aut labore iste consectetur aut. Non reprehenderit maiores beatae non repudiandae fugit officia. Vitae quia culpa consequatur sed. Porro laborum et natus est voluptas sit dolore.\n\nOmnis numquam qui eum cupiditate sed et. Modi consequatur illo quia recusandae. Debitis voluptates doloribus dolores placeat id.\n\nQuidem modi voluptas sint quia quis. Cupiditate molestias ea qui necessitatibus. Voluptas sit quo aliquid et placeat consectetur.\n\nVel omnis libero libero dolore. Quidem officia qui quo ipsum nulla. Pariatur excepturi quasi provident necessitatibus fugit eos.\n\nAliquid iure et aut sit. Quo illum officia distinctio ex consequuntur qui voluptas. Laboriosam dolores facere porro et corrupti repellendus sed sit.",
+            "created_at": "2024-05-20T08:21:50.000000Z"
+        },
+        {
+            "produk_id": 5,
+            "image": [
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=9"
+                },
+                {
+                    "image": "http://127.0.0.1:8000/https://picsum.photos/200/300?random=10"
+                }
+            ],
+            "label": "produk 18",
+            "slug": "produk-18",
+            "price": "14,472",
+            "stock": 4,
+            "deskripsi": "Sit suscipit fugit id sit. Cum exercitationem reiciendis eaque delectus quis nostrum nihil quisquam. Rerum quos rem libero rerum facere.\n\nEt quis voluptatum omnis corporis. Aut quia perspiciatis quod aut. Culpa veritatis soluta et quibusdam laborum incidunt voluptatem sapiente.\n\nEnim ut natus recusandae ducimus qui. Mollitia ut laboriosam adipisci minima voluptatum qui qui maxime. Omnis quia voluptatem asperiores voluptatem neque consequatur deserunt. Labore nisi omnis quod reiciendis.\n\nNatus iusto nisi sed ducimus. Ab ut id excepturi. Fugiat voluptatem illum hic tempore nulla veritatis similique. Voluptatum sequi quos dolores modi accusamus.\n\nFugit omnis aut earum iste aspernatur in fuga qui. Assumenda sit neque molestiae qui illo. Nam quia non veniam et. Ut qui illo aut voluptatem debitis ipsam doloribus.\n\nAut libero soluta sunt quis quis laboriosam. Quos expedita sed minus optio vero est dolorem. Voluptates quae tempore aut modi sed nam blanditiis possimus.\n\nVero sit aperiam corrupti sint non. Enim aut quo laborum non. Sint et cumque ut est quas.\n\nQui quia non vitae ea iure dolorem. Ipsum ex praesentium voluptatem non molestiae minima.\n\nIllum eos enim aliquam sunt. Odit voluptatum tempora sit in vel laboriosam quos. Accusamus incidunt sunt sit exercitationem qui quo.\n\nRem ullam molestias voluptate. Corporis omnis perferendis voluptatem veritatis perferendis neque repellendus. Aut sed possimus est repellendus corporis reiciendis.",
+            "created_at": "2024-05-20T08:21:50.000000Z"
+        }
+    ],
+    "links": {
+        "first": "http://127.0.0.1:8000/api/store/all?page=1",
+        "last": "http://127.0.0.1:8000/api/store/all?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http://127.0.0.1:8000/api/store/all?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http://127.0.0.1:8000/api/store/all",
+        "per_page": 20,
+        "to": 6,
+        "total": 6
+    }
+}

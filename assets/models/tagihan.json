@@ -1,0 +1,51 @@
+{
+    "data": [
+        {
+            "tagihan_id": 12,
+            "santri_id": 21,
+            "santri": {
+                "santri_id": 21,
+                "nama": "andhi",
+                "nisn": null,
+                "jenjang": {
+                    "jenjang_id": 1,
+                    "jenjang": "ma",
+                    "created_at": "2024-05-20T08:46:37.000000Z",
+                    "updated_at": "2024-05-20T08:46:37.000000Z",
+                    "deleted_at": null
+                },
+                "tgl_masuk": null,
+                "jenis_kelamin": "laki-laki",
+                "status": "aktif",
+                "created_at": "2024-05-20T13:39:33.000000Z",
+                "updated_at": "2024-05-20T13:39:33.000000Z",
+                "deleted_at": null
+            },
+            "transaksi": {
+                "transaksi_id": 11,
+                "tagihan_id": 12,
+                "invoice_id": "664b53c8c29040bce82ec719",
+                "external_id": "42370fb1-e294-4658-b4bc-348400e04c78",
+                "payment_link": "https://checkout-staging.xendit.co/v2/664b53c8c29040bce82ec719",
+                "price": 100000,
+                "pay": 100000,
+                "payment_type": "payment_gateway",
+                "payment_status": "PENDING",
+                "expired": "2024-05-21 13:44:40",
+                "user_created": null,
+                "created_at": "2024-05-20T13:44:39.000000Z",
+                "updated_at": "2024-05-20T13:44:39.000000Z",
+                "user_updated": null,
+                "deleted_at": null,
+                "user_deleted": null,
+                "deleted": null
+            },
+            "label": "TEST",
+            "price": 100000,
+            "date": "2024-05-01",
+            "status": "menunggu dibayar",
+            "created_at": "2024-05-20T13:44:24.000000Z",
+            "updated_at": "2024-05-20T13:44:39.000000Z"
+        }
+    ]
+}

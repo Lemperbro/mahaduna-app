@@ -10,23 +10,27 @@ class KajianProvider extends GetConnect {
   void onInit() {
     baseUrlBackend = BaseUrlBackend.baseUrl;
     super.onInit();
+
+    httpClient.timeout = Duration(seconds: 30);
   }
 
   Future<Response> getAllKajian(
-      {dynamic keyword = null, String paginate = '10'}) {
+      {dynamic keyword = null, String paginate = '10', int page = 1}) {
     final Map<String, String> headers = {
       'Accept': 'application/json',
     };
     final Map<String, dynamic> queryParams = {
       if (keyword != null) 'keyword': keyword,
       'paginate': paginate,
-      'part': 'snippet,contentDetails'
+      'part': 'snippet,contentDetails',
+      'page': page.toString()
     };
-    return get(
+    var response = get(
       '$baseUrlBackend/playlist/all',
       headers: headers,
       query: queryParams,
     );
+    return response;
   }
 
   Future<Response> getAllLatestVideo(
@@ -41,10 +45,43 @@ class KajianProvider extends GetConnect {
       'paginate': paginate,
       if (pageToken != null) 'pageToken': pageToken
     };
-    return get(
+    var response = get(
       '$baseUrlBackend/playlist/videos/all',
       headers: headers,
       query: queryParams,
     );
+    return response;
+  }
+
+  Future<Response> findVideo(String videoId) {
+    final Map<String, String> headers = {
+      'Accept': 'application/json',
+    };
+    final Map<String, dynamic> queryParams = {'videoId': videoId};
+
+    var response = get(
+      '${baseUrlBackend}/playlist/show/video',
+      headers: headers,
+      query: queryParams,
+    );
+    return response;
+  }
+
+  Future<Response> playlistItems(String playlistId,
+      {dynamic pageToken = null}) {
+    final Map<String, String> headers = {
+      'Accept': 'application/json',
+    };
+    final Map<String, dynamic> queryParams = {
+      'playlistId': playlistId,
+      if (pageToken != null) 'pageToken': pageToken
+    };
+
+    var response = get(
+      '${baseUrlBackend}/playlist/items',
+      headers: headers,
+      query: queryParams,
+    );
+    return response;
   }
 }

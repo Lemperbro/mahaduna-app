@@ -1,0 +1,481 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "vn5vNEbaS_r_1FjLgMM99ByLYXA",
+    "nextPageToken": "EAAajgFQVDpDQW9pRURRM05rSXdSRU15TlVRM1JFVkZPRUVvQVVqNy1keno2NWlFQTFBQldrVWlRMmxLVVZSSWJFMWtXR3cwWW01U1NtVlVVbGxVTVVrelZETkthVlJ0ZUhGbGJrWk1UakZyZDFwNU1WVmhSRTEzUldkM1NXNVpaVTV5WjFsUkxVdFVjR3gzUlNJ",
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "eGfGW7SAsXuf3DXVOfPWL33kCLc",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC41NkI0NEY2RDEwNTU3Q0M2",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:22:19Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 1",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Ahmad Ali Imron Al Hanafy\n(Hal : 30-58)\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/uKepPJsNCFk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/uKepPJsNCFk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/uKepPJsNCFk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/uKepPJsNCFk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/uKepPJsNCFk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "uKepPJsNCFk"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "_cYlpDDzAKu77vBUs6YRraAMqac",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC4yODlGNEE0NkRGMEEzMEQy",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:23:22Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 2",
+                "description": "Edisi Isro' Mi'roj \nBersama : Ust.Habiburrohman\n{Hal : 58 - 63}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XT-4RwKz-ts/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XT-4RwKz-ts/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XT-4RwKz-ts/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/XT-4RwKz-ts/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/XT-4RwKz-ts/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "XT-4RwKz-ts"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "T-PybyrG4NMH-1mXIJuOTq1xEMM",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC4wMTcyMDhGQUE4NTIzM0Y5",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:23:34Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 3",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 63-71}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XWPGC2QS5CU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XWPGC2QS5CU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XWPGC2QS5CU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/XWPGC2QS5CU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/XWPGC2QS5CU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 2,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "XWPGC2QS5CU"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "dKuep3SJfIuHx2Z8UjqPPbpBKlA",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC41MjE1MkI0OTQ2QzJGNzNG",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:23:44Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 3",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 63-71}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/HmXzoFgmjNo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/HmXzoFgmjNo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/HmXzoFgmjNo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/HmXzoFgmjNo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/HmXzoFgmjNo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "HmXzoFgmjNo"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "RHkLBuJ3y9gMCQVT3hnsWxtWOCc",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC4wOTA3OTZBNzVEMTUzOTMy",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:23:54Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 3",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 63-71}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/C71ZZdrmWXk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/C71ZZdrmWXk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/C71ZZdrmWXk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/C71ZZdrmWXk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/C71ZZdrmWXk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "C71ZZdrmWXk"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "SITpk4IAQ49bMbDVpEV2rxwSI_I",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC4xMkVGQjNCMUM1N0RFNEUx",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:24:21Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 4",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 71-78}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/GsNf4rqHluE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/GsNf4rqHluE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/GsNf4rqHluE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/GsNf4rqHluE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/GsNf4rqHluE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 5,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "GsNf4rqHluE"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "4rp0_rQmcHtT5A8qVyi6VgB-KOA",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC41MzJCQjBCNDIyRkJDN0VD",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:24:32Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 4",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 71-78}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/52hubiYPxG0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/52hubiYPxG0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/52hubiYPxG0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/52hubiYPxG0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/52hubiYPxG0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 6,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "52hubiYPxG0"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "1-hszDBdnP-uABzvVpwjhxBSPUA",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC5DQUNERDQ2NkIzRUQxNTY1",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:24:42Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 4",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Alawy Aly Imron\n{Hal : 71-78}\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mCLsJbV6Wkc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mCLsJbV6Wkc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mCLsJbV6Wkc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/mCLsJbV6Wkc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/mCLsJbV6Wkc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 7,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "mCLsJbV6Wkc"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "UJwAcNrm659nRYcYYCtOEFnRZ-8",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC45NDk1REZENzhEMzU5MDQz",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:24:54Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 5",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Ahmad Ali Imron Al Hanafy\n(Hal : 79-98)\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/blNZXfMrR-E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/blNZXfMrR-E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/blNZXfMrR-E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/blNZXfMrR-E/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/blNZXfMrR-E/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 8,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "blNZXfMrR-E"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "xTHguczPGYn8w3KSnGSSI-aeB7k",
+            "id": "UEx5THV5eG50SXk0WE9SN09yYk5sanpxSzdZMGctVGgzMC5GNjNDRDREMDQxOThCMDQ2",
+            "snippet": {
+                "publishedAt": "2024-02-05T09:26:42Z",
+                "channelId": "UC4ZuPUdoM7abr1THeLE-Lag",
+                "title": "🔴 [LIVE] Kajian Kitab Wa Huwa Bil Ufuqil A'la Part : 5",
+                "description": "Edisi Isro' Mi'roj \nBersama : Agus Ahmad Ali Imron Al Hanafy\n(Hal : 79-98)\n\nMa'had Nuur Al Anwar, Parengan - Maduran - Lamongan \n\n\n© Februari 2023",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/aNGXUaZZiBk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/aNGXUaZZiBk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/aNGXUaZZiBk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/aNGXUaZZiBk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/aNGXUaZZiBk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "eN-A Tv",
+                "playlistId": "PLyLuyxntIy4XOR7OrbNljzqK7Y0g-Th30",
+                "position": 9,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "aNGXUaZZiBk"
+                },
+                "videoOwnerChannelTitle": "eN-A Tv",
+                "videoOwnerChannelId": "UC4ZuPUdoM7abr1THeLE-Lag"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 21,
+        "resultsPerPage": 10
+    }
+}

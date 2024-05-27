@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
+import 'package:get/get.dart';
 import 'package:mahaduna_apps/app/config/config.dart';
-import 'package:mahaduna_apps/app/routes/navigate_routes.dart';
+import 'package:mahaduna_apps/app/routes/app_pages.dart';
 
 class Menu extends StatelessWidget {
   @override
@@ -13,9 +13,7 @@ class Menu extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               InkWell(
-                onTap: () {
-                  NavigateRoutes.navRoutes['test']!(context);
-                },
+                onTap: () => Get.toNamed(Routes.JADWAL),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -42,79 +40,88 @@ class Menu extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: 55,
-                    height: 55,
-                    decoration: BoxDecoration(
-                        color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
-                        borderRadius: BorderRadius.all(Radius.circular(100))),
-                    child: SizedBox(
-                      width: 10,
-                      child: Image.asset(
-                        'assets/icons/majalah.png',
-                        fit: BoxFit.contain,
+              InkWell(
+                onTap: () => Get.toNamed(Routes.ADDIYA),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: 55,
+                      height: 55,
+                      decoration: BoxDecoration(
+                          color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
+                          borderRadius: BorderRadius.all(Radius.circular(100))),
+                      child: SizedBox(
+                        width: 10,
+                        child: Image.asset(
+                          'assets/icons/majalah.png',
+                          fit: BoxFit.contain,
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text('Addiya', style: TextStyle(fontWeight: FontWeight.w600))
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: 55,
-                    height: 55,
-                    decoration: BoxDecoration(
-                        color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
-                        borderRadius: BorderRadius.all(Radius.circular(100))),
-                    child: SizedBox(
-                      // width: 10,
-                      child: Image.asset('assets/icons/store.png',
-                          fit: BoxFit.contain),
+                    SizedBox(
+                      height: 5,
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text('Store', style: TextStyle(fontWeight: FontWeight.w600))
-                ],
+                    Text('Addiya', style: TextStyle(fontWeight: FontWeight.w600))
+                  ],
+                ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    width: 55,
-                    height: 55,
-                    decoration: BoxDecoration(
-                        color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
-                        borderRadius: BorderRadius.all(Radius.circular(100))),
-                    child: SizedBox(
-                      width: 10,
-                      child: Image.asset(
-                        'assets/icons/artikel.png',
-                        fit: BoxFit.contain,
+              InkWell(
+                onTap: () => Get.toNamed(Routes.STORE),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: 55,
+                      height: 55,
+                      decoration: BoxDecoration(
+                          color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
+                          borderRadius: BorderRadius.all(Radius.circular(100))),
+                      child: SizedBox(
+                        // width: 10,
+                        child: Image.asset('assets/icons/store.png',
+                            fit: BoxFit.contain),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text('Artikel',
-                      style: TextStyle(
-                          fontWeight: FontWeight.w600,
-                          leadingDistribution:
-                              TextLeadingDistribution.proportional))
-                ],
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text('Store', style: TextStyle(fontWeight: FontWeight.w600))
+                  ],
+                ),
+              ),
+              InkWell(
+                onTap: () => Get.toNamed(Routes.ARTIKEL),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      width: 55,
+                      height: 55,
+                      decoration: BoxDecoration(
+                          color: Color(ConfigColor.appBarColor2).withOpacity(0.2),
+                          borderRadius: BorderRadius.all(Radius.circular(100))),
+                      child: SizedBox(
+                        width: 10,
+                        child: Image.asset(
+                          'assets/icons/artikel.png',
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text('Artikel',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            leadingDistribution:
+                                TextLeadingDistribution.proportional))
+                  ],
+                ),
               ),
             ],
           ),

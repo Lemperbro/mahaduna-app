@@ -6,10 +6,13 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Color(ConfigColor.appBarColor1),
-      title: Text('Video Kajian'),
+      centerTitle: true,
+      // title: Text('Video Kajian', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w600),),
       bottom: TabBar(
         isScrollable: false,
         indicatorColor: Colors.white,
+        labelColor: Colors.white,
+        unselectedLabelColor: Colors.grey[300],
         indicatorWeight: 3,
         tabs: [
           Tab(
