@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171619025391",
+    "project_id": "ma-haduna",
+    "storage_bucket": "ma-haduna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171619025391:android:ded6d239a8ffda1a25f61a",
+        "android_client_info": {
+          "package_name": "mahaduna.com.mahaduna_apps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ezvYgMU6fw0ryQS_klV1rUOFjf49Jbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
