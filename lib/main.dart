@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               color: Colors.white, fontSize: 18, fontWeight: FontWeight.w500),
         ),
       ),
-      title: "Ma'haduNa",
+      title: "Ma'haduN",
       initialRoute: AppPages.INITIAL,
       debugShowCheckedModeBanner: false,
       getPages: AppPages.routes,
