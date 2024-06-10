@@ -6,6 +6,7 @@ class AddiyaController extends GetxController {
   final majalahRepo = Get.put(MajalahRepo());
 
   final isLoadingAddiya = true.obs;
+  final isLoadingLoadMore = false.obs;
   final addiyaData = Rx<AllMajalahModel?>(null);
   final addiyaErr = Rx<Map<String, dynamic>?>(null);
 
@@ -32,6 +33,25 @@ class AddiyaController extends GetxController {
 
   Future refreshPage() async {
     allAddiya();
+  }
+
+  void loadMore(int? page) async {
+    isLoadingLoadMore.value = true;
+    try {
+      var response = await majalahRepo.allMajalah(sortBest: sortBest, page: page);
+      if (!(response is AllMajalahModel)) {
+        if (response.containsKey('error')) {
+          addiyaErr.value = response;
+        }
+      } else {
+        response.data!.insertAll(0, addiyaData.value!.data!);
+        addiyaData.value = response;
+      }
+    } catch (err) {
+      Get.snackbar('error', 'Ada kesalahan sistem');
+    } finally {
+      isLoadingLoadMore.value = false;
+    }
   }
 
   void allAddiya() async {

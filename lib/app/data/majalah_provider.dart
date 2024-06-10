@@ -13,11 +13,11 @@ class MajalahProvider extends GetConnect {
     httpClient.timeout = Duration(seconds: 30);
   }
 
-  Future<Response> getAllMajalah({
-    bool? sortBest,
-    String paginate = '10',
-    dynamic keyword = null,
-  }) {
+  Future<Response> getAllMajalah(
+      {bool? sortBest,
+      String paginate = '10',
+      dynamic keyword = null,
+      int? page}) {
     final Map<String, String> headers = {
       'Accept': 'application/json',
     };
@@ -25,6 +25,7 @@ class MajalahProvider extends GetConnect {
       if (keyword != null) 'keyword': keyword,
       'paginate': paginate,
       if (sortBest != null) 'sortBest': sortBest ? '1' : '0',
+      if (page != null) 'page': page.toString()
     };
 
     var response = get(

@@ -23,6 +23,18 @@ class SnackBarCustom {
     );
   }
 
+  void snackbarInfo(String title, String message) {
+    Get.snackbar(
+      title,
+      message,
+      barBlur: 1,
+      backgroundColor: Color(ConfigColor.appBarColor1),
+      colorText: Colors.white,
+      animationDuration: Duration(milliseconds: 500),
+      duration: Duration(seconds: 4),
+    );
+  }
+
   void snackError(
       {String title = 'Kesalahan',
       String message = 'Terjadi kesalahan, silakan coba lagi'}) {

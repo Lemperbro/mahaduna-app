@@ -22,7 +22,8 @@ class KajianRepo extends GetxController with StateMixin {
   //ini pakai model AllPlaylist
   Future getAllKajian({String paginate = '10', int page = 1}) async {
     try {
-      var value = await _kajianProvider.getAllKajian(paginate: paginate, page: page);
+      var value =
+          await _kajianProvider.getAllKajian(paginate: paginate, page: page);
       if (value.statusCode == 200) {
         var response = allPlaylistFromJson(value.bodyString!);
         return response;
@@ -39,11 +40,14 @@ class KajianRepo extends GetxController with StateMixin {
   Future getAllLatestVideo(
       {evenType = 'completed',
       pageToken = null,
-      String paginate = '10'}) async {
+      String paginate = '10',
+      String? keyword}) async {
     try {
       var value = await _kajianProvider.getAllLatestVideo(
-          evenType: evenType, pageToken: pageToken, paginate: paginate);
-
+          evenType: evenType,
+          pageToken: pageToken,
+          paginate: paginate,
+          keyword: keyword);
       if (value.statusCode == 200) {
         var response = allVideoFromJson(value.bodyString!);
         return response;
@@ -74,8 +78,8 @@ class KajianRepo extends GetxController with StateMixin {
 
   Future playlistItems(String playlistId, {dynamic pageToken = null}) async {
     try {
-      var value = await _kajianProvider.playlistItems(playlistId, pageToken: pageToken);
-      print(value.bodyString);
+      var value =
+          await _kajianProvider.playlistItems(playlistId, pageToken: pageToken);
       if (value.statusCode == 200) {
         var response = playlistItemsModelFromJson(value.bodyString!);
         return response;

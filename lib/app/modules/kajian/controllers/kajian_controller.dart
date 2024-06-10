@@ -19,6 +19,8 @@ class KajianController extends GetxController with StateMixin {
   final playlistErr = Rx<Map<String, dynamic>?>(null);
 
   final ScrollController scrollController = ScrollController();
+  TextEditingController searchInput = TextEditingController();
+  final isSearching = false.obs;
 
   @override
   void onInit() {
@@ -30,6 +32,17 @@ class KajianController extends GetxController with StateMixin {
     super.onReady();
     allVideoVoid();
     allPlaylist();
+  }
+
+  void onSearchButtonPressed() {
+    isSearching.value = true;
+    allVideoVoid(keyword: searchInput.text);
+  }
+
+  void closeSearch() {
+    searchInput.text = '';
+    isSearching.value = false;
+    allVideoVoid();
   }
 
   void refreshPage() {
@@ -81,8 +94,10 @@ class KajianController extends GetxController with StateMixin {
     isLoadingMoreVideo.value = true;
     limitLoadMore.value--;
     try {
+      var keyword;
+      isSearching.value ? keyword = searchInput.text : keyword = null;
       var getAllVideo = await kajianRepo.getAllLatestVideo(
-          paginate: '10', pageToken: pageToken);
+          paginate: '10', pageToken: pageToken, keyword: keyword);
       if (!(getAllVideo is AllVideo)) {
         if (getAllVideo.containsKey('error')) {
           this.allVideoErr.value = getAllVideo;
@@ -107,12 +122,12 @@ class KajianController extends GetxController with StateMixin {
     allPlaylist();
   }
 
-  void allVideoVoid({dynamic pageToken = null}) async {
+  void allVideoVoid({dynamic pageToken = null, String? keyword}) async {
     isLoadingAllVideo.value = true;
     limitLoadMore.value = 10;
     try {
       var getAllVideo = await kajianRepo.getAllLatestVideo(
-          paginate: '10', pageToken: pageToken);
+          paginate: '10', pageToken: pageToken, keyword: keyword);
       if (!(getAllVideo is AllVideo)) {
         if (getAllVideo.containsKey('error')) {
           this.allVideoErr.value = getAllVideo;

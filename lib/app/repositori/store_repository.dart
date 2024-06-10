@@ -14,9 +14,9 @@ class StoreRepo extends GetxController {
     return error;
   }
 
-  Future allProduk() async {
+  Future allProduk({int? page}) async {
     try {
-      var response = await _storeProvider.allProduk();
+      var response = await _storeProvider.allProduk(page: page);
       if (response.statusCode == 200) {
         return storeAllModelFromJson(response.bodyString!);
       } else {

@@ -8,7 +8,7 @@ import 'package:responsive_grid/responsive_grid.dart';
 import '../controllers/addiya_controller.dart';
 
 class AddiyaView extends GetView<AddiyaController> {
-  const AddiyaView({Key? key}) : super(key: key);
+  final ScrollController scrollC = ScrollController();
   String dynamicTitle() {
     if ((Get.arguments is Map) && Get.arguments.containsKey('sortBest')) {
       if (Get.arguments['sortBest'] == true) {
@@ -21,8 +21,20 @@ class AddiyaView extends GetView<AddiyaController> {
     }
   }
 
+  void loadMore() {
+    if (scrollC.position.pixels == scrollC.position.maxScrollExtent &&
+        (controller.addiyaData.value?.meta?.currentPage ?? 0) <
+            (controller.addiyaData.value?.meta?.lastPage ?? 0)) {
+      if (!controller.isLoadingLoadMore.value) {
+        var page = (controller.addiyaData.value?.meta?.currentPage ?? 0) + 1;
+        controller.loadMore(page);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
+    scrollC.addListener(loadMore);
     return Scaffold(
         appBar: AppBar(
           title: const Text(
@@ -42,6 +54,7 @@ class AddiyaView extends GetView<AddiyaController> {
             return RefreshIndicator(
               onRefresh: () => controller.refreshPage(),
               child: ListView(
+                controller: scrollC,
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 15, bottom: 15),
@@ -88,7 +101,8 @@ class AddiyaView extends GetView<AddiyaController> {
                                     child: Column(
                                       children: [
                                         ClipRRect(
-                                          borderRadius: BorderRadius.circular(10),
+                                          borderRadius:
+                                              BorderRadius.circular(10),
                                           child: Container(
                                             height: 190,
                                             width: Get.width,
@@ -106,7 +120,8 @@ class AddiyaView extends GetView<AddiyaController> {
                                             horizontal: 5,
                                           ),
                                           child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
                                             children: [
                                               Text(
                                                 '${item.judul}',
@@ -130,7 +145,20 @@ class AddiyaView extends GetView<AddiyaController> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Obx(() {
+                    if (!controller.isLoadingAddiya.value &&
+                        controller.isLoadingLoadMore.value) {
+                      return Container(
+                        height: 200,
+                        child: Center(
+                          child: CircularProgressIndicator(),
+                        ),
+                      );
+                    } else {
+                      return Container();
+                    }
+                  })
                 ],
               ),
             );

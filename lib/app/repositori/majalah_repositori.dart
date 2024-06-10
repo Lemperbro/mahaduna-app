@@ -17,10 +17,10 @@ class MajalahRepo extends GetxController with StateMixin {
   Future allMajalah(
       {bool sortBest = false,
       dynamic keyword = null,
-      String paginate = '10'}) async {
+      String paginate = '6', int? page}) async {
     try {
       var value = await _majalahProvider.getAllMajalah(
-          sortBest: sortBest, keyword: keyword, paginate: paginate);
+          sortBest: sortBest, keyword: keyword, paginate: paginate, page: page);
 
 
       if (value.statusCode == 200) {

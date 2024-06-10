@@ -8,5 +8,5 @@ abstract class ConfigColor {
 
 abstract class BaseUrlBackend {
   // static const String baseUrl = "https://youtube.googleapis.com/youtube/v3/playlists";
-  static const String baseUrl = "https://ryandev.biz.id/api";
+  static const String baseUrl = "https://mahaduna.biz.id/api";
 }

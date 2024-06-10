@@ -13,14 +13,16 @@ class ArtikelView extends GetView<ArtikelController> {
     if (scrollC.position.pixels == scrollC.position.maxScrollExtent &&
         (controller.allArtikelDataTerbaru.value?.meta?.currentPage ?? 0) <
             (controller.allArtikelDataTerbaru.value?.meta?.lastPage ?? 0)) {
-      controller.isLoadingLoadMore.value = true;
-      var page =
-          (controller.allArtikelDataTerbaru.value?.meta?.currentPage ?? 0) + 1;
-      if (controller.kategoriIdAktif.value != 0) {
-        controller.loadMoreArtikel(page,
-            kategori_id: controller.kategoriIdAktif.value.toString());
-      } else {
-        controller.loadMoreArtikel(page);
+      if (!controller.isLoadingLoadMore.value) {
+        var page =
+            (controller.allArtikelDataTerbaru.value?.meta?.currentPage ?? 0) +
+                1;
+        if (controller.kategoriIdAktif.value != 0) {
+          controller.loadMoreArtikel(page,
+              kategori_id: controller.kategoriIdAktif.value.toString());
+        } else {
+          controller.loadMoreArtikel(page);
+        }
       }
     }
   }

@@ -13,7 +13,7 @@ class ProdukDetailView extends GetView<StoreController> {
   Widget build(BuildContext context) {
     List<String> image =
         data.image.map<String>((item) => item.image as String).toList();
-    int numOfShowImages = image.length < 5 ? 2 : (image.length ~/ 4);
+    int numOfShowImages = image.length < 5 ? image.length : (image.length ~/ 4);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Detail Produk'),

@@ -36,14 +36,16 @@ class KajianProvider extends GetConnect {
   Future<Response> getAllLatestVideo(
       {String evenType = 'completed',
       String paginate = '10',
-      dynamic pageToken = null}) {
+      dynamic pageToken = null,
+      String? keyword}) {
     final Map<String, String> headers = {
       'Accept': 'application/json',
     };
     final Map<String, dynamic> queryParams = {
       'evenType': evenType,
       'paginate': paginate,
-      if (pageToken != null) 'pageToken': pageToken
+      if (pageToken != null) 'pageToken': pageToken,
+      if (keyword != null) 'keyword': keyword
     };
     var response = get(
       '$baseUrlBackend/playlist/videos/all',

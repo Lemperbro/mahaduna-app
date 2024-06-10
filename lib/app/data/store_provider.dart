@@ -14,14 +14,13 @@ class StoreProvider extends GetConnect {
     httpClient.timeout = Duration(seconds: 30);
   }
 
-  Future<Response> allProduk({
-    String paginate = '10',
-  }) {
+  Future<Response> allProduk({String paginate = '6', int? page}) {
     final Map<String, String> headers = {
       'Accept': 'application/json',
     };
     final Map<String, dynamic> queryParams = {
       'paginate': paginate,
+      if (page != null) 'page': page.toString()
     };
 
     return get('${baseUrlBackend}/store/all',

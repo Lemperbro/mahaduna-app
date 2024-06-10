@@ -14,6 +14,7 @@ class StoreController extends GetxController {
   late final String baseUrlBackend;
 
   final isLoadingAllProduk = true.obs;
+  final isLoadingLoadMore = false.obs;
   final allProdukData = Rx<StoreAllModel?>(null);
   final allProdukErr = Rx<Map<String, dynamic>?>(null);
   @override
@@ -35,6 +36,25 @@ class StoreController extends GetxController {
 
   Future refreshPage() async {
     allProduk();
+  }
+
+  void loadMore(int page) async {
+    isLoadingLoadMore.value = true;
+    try {
+      var getAllProduk = await storeRepo.allProduk(page: page);
+      if (!(getAllProduk is StoreAllModel)) {
+        if (getAllProduk.containsKey('error')) {
+          this.allProdukErr.value = getAllProduk;
+        }
+      } else {
+        getAllProduk.data!.insertAll(0, allProdukData.value!.data!);
+        this.allProdukData.value = getAllProduk;
+      }
+    } catch (err) {
+      Get.snackbar('error', 'Ada kesalahan sistem');
+    } finally {
+      isLoadingLoadMore.value = false;
+    }
   }
 
   void allProduk() async {

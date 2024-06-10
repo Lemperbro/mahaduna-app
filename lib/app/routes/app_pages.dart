@@ -9,12 +9,18 @@ import '../modules/artikel/views/artikel_read_view.dart';
 import '../modules/artikel/views/artikel_view.dart';
 import '../modules/bottom_navigate/bindings/bottom_navigate_binding.dart';
 import '../modules/bottom_navigate/views/bottom_navigate_view.dart';
+import '../modules/hafalan/bindings/hafalan_binding.dart';
+import '../modules/hafalan/views/hafalan_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/jadwal/bindings/jadwal_binding.dart';
 import '../modules/jadwal/views/jadwal_view.dart';
 import '../modules/kajian/bindings/kajian_binding.dart';
 import '../modules/kajian/views/kajian_view.dart';
+import '../modules/monitoring/bindings/monitoring_binding.dart';
+import '../modules/monitoring/views/monitoring_view.dart';
+import '../modules/notifikasi/bindings/notifikasi_binding.dart';
+import '../modules/notifikasi/views/notifikasi_view.dart';
 import '../modules/play_kajian/bindings/play_kajian_binding.dart';
 import '../modules/play_kajian/views/play_kajian_view.dart';
 import '../modules/playlist_items/bindings/playlist_items_binding.dart';
@@ -92,7 +98,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ADDIYA,
-      page: () => const AddiyaView(),
+      page: () => AddiyaView(),
       binding: AddiyaBinding(),
       transition: Transition.fadeIn,
       transitionDuration: Duration(milliseconds: 1),
@@ -165,6 +171,21 @@ class AppPages {
       name: _Paths.SANTRI,
       page: () => const SantriView(),
       binding: SantriBinding(),
+    ),
+    GetPage(
+      name: _Paths.MONITORING,
+      page: () => MonitoringView(),
+      binding: MonitoringBinding(),
+    ),
+    GetPage(
+      name: _Paths.HAFALAN,
+      page: () => HafalanView(),
+      binding: HafalanBinding(),
+    ),
+    GetPage(
+      name: _Paths.NOTIFIKASI,
+      page: () => NotifikasiView(),
+      binding: NotifikasiBinding(),
     ),
   ];
 }

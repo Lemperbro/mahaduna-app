@@ -99,10 +99,12 @@ class ArtikelController extends GetxController {
             this.allArtikelErrTerbaru.value = getAllArtikel;
           }
         } else {
-          if (kategori_id == null) {
-            getStorage.write('artikel_semua', getAllArtikel);
-          } else {
-            getStorage.write('artikel_${kategori_id}', getAllArtikel);
+          if (getAllArtikel.data!.isNotEmpty) {
+            if (kategori_id == null) {
+              getStorage.write('artikel_semua', getAllArtikel);
+            } else {
+              getStorage.write('artikel_${kategori_id}', getAllArtikel);
+            }
           }
           this.allArtikelDataTerbaru.value = getAllArtikel;
         }

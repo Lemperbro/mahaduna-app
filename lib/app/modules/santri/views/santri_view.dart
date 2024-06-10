@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:mahaduna_apps/app/config/config.dart';
+import 'package:mahaduna_apps/app/routes/app_pages.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../controllers/santri_controller.dart';
@@ -149,7 +150,9 @@ class SantriView extends GetView<SantriController> {
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                       decoration: BoxDecoration(
-                        color: controller.santriData.status == 'aktif' ? Colors.green : Colors.grey[900],
+                        color: controller.santriData.status == 'aktif'
+                            ? Colors.green
+                            : Colors.grey[900],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Text(
@@ -173,148 +176,168 @@ class SantriView extends GetView<SantriController> {
             SizedBox(
               height: 15,
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
-              child: Column(
-                children: [
-                  Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Colors.cyan[900],
-                                borderRadius: BorderRadius.circular(10),
+            InkWell(
+              onTap: () => Get.toNamed(Routes.MONITORING, arguments: {
+                'santri': controller.santriData,
+                'kategori': 'sholat jamaah'
+              }),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Column(
+                  children: [
+                    Container(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.cyan[900],
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Icon(
+                                  Icons.analytics,
+                                  color: Colors.white,
+                                ),
                               ),
-                              child: Icon(
-                                Icons.analytics,
-                                color: Colors.white,
+                              SizedBox(
+                                width: 10,
                               ),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Container(
-                              child: Text(
-                                'Monitoring Sholat Jamaah',
-                                style: TextStyle(fontSize: 18),
+                              Container(
+                                child: Text(
+                                  'Monitoring Sholat Jamaah',
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Icon(Icons.arrow_forward_ios),
-                        )
-                      ],
+                            ],
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.arrow_forward_ios),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
-              child: Column(
-                children: [
-                  Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Colors.deepPurple[900],
-                                borderRadius: BorderRadius.circular(10),
+            InkWell(
+              onTap: () => Get.toNamed(Routes.MONITORING, arguments: {
+                'santri': controller.santriData,
+                'kategori': 'ngaji'
+              }),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(15)),
+                child: Column(
+                  children: [
+                    Container(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple[900],
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Icon(
+                                  Icons.dataset,
+                                  color: Colors.white,
+                                ),
                               ),
-                              child: Icon(
-                                Icons.dataset,
-                                color: Colors.white,
+                              SizedBox(
+                                width: 10,
                               ),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Container(
-                              child: Text(
-                                'Monitoring Ngaji',
-                                style: TextStyle(fontSize: 18),
+                              Container(
+                                child: Text(
+                                  'Monitoring Ngaji',
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Icon(Icons.arrow_forward_ios),
-                        )
-                      ],
+                            ],
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.arrow_forward_ios),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
-              child: Column(
-                children: [
-                  Container(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[900],
-                                borderRadius: BorderRadius.circular(10),
+            InkWell(
+              onTap: () =>
+                  Get.toNamed(Routes.HAFALAN, arguments: controller.santriData),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue[900],
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Icon(
+                                  Icons.storage,
+                                  color: Colors.white,
+                                ),
                               ),
-                              child: Icon(
-                                Icons.storage,
-                                color: Colors.white,
+                              SizedBox(
+                                width: 10,
                               ),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Container(
-                              child: Text(
-                                'Monitoring Hafalan',
-                                style: TextStyle(fontSize: 18),
+                              Container(
+                                child: Text(
+                                  'Monitoring Hafalan',
+                                  style: TextStyle(fontSize: 18),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Icon(Icons.arrow_forward_ios),
-                        )
-                      ],
+                            ],
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.arrow_forward_ios),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ],
