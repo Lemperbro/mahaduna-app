@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:mahaduna_apps/app/modules/wali/views/wali_profile_view.dart';
 
 import '../middleware/wali_auth_middleware.dart';
 import '../modules/addiya/bindings/addiya_binding.dart';
@@ -70,6 +71,14 @@ class AppPages {
     GetPage(
       name: _Paths.WALI,
       page: () => WaliView(),
+      binding: WaliBinding(),
+      middlewares: [WaliAuthMiddleware()],
+      transition: Transition.fadeIn,
+      transitionDuration: Duration(milliseconds: 1),
+    ),
+    GetPage(
+      name: _Paths.WALI_PROFILE,
+      page: () => WaliProfileView(),
       binding: WaliBinding(),
       middlewares: [WaliAuthMiddleware()],
       transition: Transition.fadeIn,

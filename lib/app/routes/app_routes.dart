@@ -23,6 +23,7 @@ abstract class Routes {
   static const MONITORING = _Paths.MONITORING;
   static const HAFALAN = _Paths.HAFALAN;
   static const NOTIFIKASI = _Paths.NOTIFIKASI;
+  static const WALI_PROFILE = _Paths.WALI_PROFILE;
 }
 
 abstract class _Paths {
@@ -48,4 +49,5 @@ abstract class _Paths {
   static const MONITORING = '/monitoring';
   static const HAFALAN = '/hafalan';
   static const NOTIFIKASI = '/notifikasi';
+  static const WALI_PROFILE = '/wali-profile';
 }

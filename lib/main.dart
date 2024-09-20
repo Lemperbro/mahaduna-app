@@ -40,7 +40,6 @@ void main() async {
     }
     customSnackbar.snackbarInfo(
         message.notification!.title!, message.notification!.body!);
-    // Get.snackbar(message.notification!.title!, message.notification!.body!);
   });
   initializeDateFormatting('id_ID', null).then((_) {
     runApp(MyApp());

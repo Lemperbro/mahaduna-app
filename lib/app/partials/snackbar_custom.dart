@@ -28,8 +28,13 @@ class SnackBarCustom {
       title,
       message,
       barBlur: 1,
-      backgroundColor: Color(ConfigColor.appBarColor1),
+      backgroundColor: Color(0xFF333333),
       colorText: Colors.white,
+      icon: Icon(
+        Icons.notifications,
+        color: Colors.white,
+        size: 32,
+      ),
       animationDuration: Duration(milliseconds: 500),
       duration: Duration(seconds: 4),
     );

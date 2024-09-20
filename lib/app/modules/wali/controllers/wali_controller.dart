@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:mahaduna_apps/app/models/wali/find_wali_model.dart';
@@ -19,6 +20,24 @@ class WaliController extends GetxController {
   final countTagihan = 0.obs;
   final countMenungguBayar = 0.obs;
   final isLogout = false.obs;
+
+  final notShowPassword = true.obs;
+  final notShowPasswordConfirmation = true.obs;
+  final isLoadingSaveProfile = false.obs;
+
+  final namaError = ''.obs;
+  final emailError = ''.obs;
+  final telpError = ''.obs;
+  final alamatError = ''.obs;
+  final passwordError = ''.obs;
+  final passwordConfirmationError = ''.obs;
+
+  TextEditingController nama = TextEditingController();
+  TextEditingController email = TextEditingController();
+  TextEditingController telp = TextEditingController();
+  TextEditingController alamat = TextEditingController();
+  TextEditingController password = TextEditingController();
+  TextEditingController password_confirmation = TextEditingController();
 
   @override
   void onInit() {
@@ -45,6 +64,58 @@ class WaliController extends GetxController {
     findWali();
     countTagihanVoid();
     countMenungguBayarVoid();
+  }
+
+  void validateInputsProfile() {
+    namaError.value = nama.text.isEmpty ? 'Nama harus diisi' : '';
+    emailError.value = isValidEmail(email.text) ? '' : 'Email tidak valid';
+    telpError.value = telp.text.isEmpty ? 'Telepon harus diisi' : '';
+    alamatError.value = alamat.text.isEmpty ? 'Alamat harus diisi' : '';
+    passwordError.value = password.text.isEmpty
+        ? 'Password harus diisi'
+        : (password.text.length < 8 ? 'Password harus minimal 8 karakter' : '');
+    passwordConfirmationError.value =
+        password.text != password_confirmation.text
+            ? 'Password tidak sesuai'
+            : '';
+  }
+
+  void resetFormState() {
+    namaError.value = '';
+    emailError.value = '';
+    telpError.value = '';
+    alamatError.value = '';
+    passwordError.value = '';
+    passwordConfirmationError.value = '';
+    notShowPassword.value = true;
+    notShowPasswordConfirmation.value = true;
+    password.text = '';
+    password_confirmation.text = '';
+  }
+
+  bool isValidEmail(String email) {
+    String pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$';
+    RegExp regex = RegExp(pattern);
+    return regex.hasMatch(email);
+  }
+
+  Future setValueFormProfile() async {
+    if (waliData.value != null) {
+      nama.text = waliData.value!.data!.nama!;
+      email.text = waliData.value!.data!.email!;
+      telp.text = waliData.value!.data!.telp!;
+      alamat.text = waliData.value!.data!.alamat!;
+    }
+  }
+
+  void saveProfile() {
+    isLoadingSaveProfile.value = true;
+
+    try {
+      validateInputsProfile();
+    } finally {
+      isLoadingSaveProfile.value = false;
+    }
   }
 
   void findWali() async {

@@ -97,11 +97,14 @@ class WaliView extends GetView<WaliController> {
                                   SizedBox(
                                     width: 10,
                                   ),
-                                  Container(
-                                    child: CircleAvatar(
-                                      maxRadius: 30,
-                                      backgroundImage: AssetImage(
-                                          'assets/images/default_pp_user.png'),
+                                  InkWell(
+                                    onTap: () => Get.toNamed(Routes.WALI_PROFILE),
+                                    child: Container(
+                                      child: CircleAvatar(
+                                        maxRadius: 30,
+                                        backgroundImage: AssetImage(
+                                            'assets/images/default_pp_user.png'),
+                                      ),
                                     ),
                                   )
                                 ],
